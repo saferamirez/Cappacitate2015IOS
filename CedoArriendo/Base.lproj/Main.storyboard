@@ -323,7 +323,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apartamento en Dubai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsC-22-uqO">
-                                                    <rect key="frame" x="121" y="10" width="225" height="21"/>
+                                                    <rect key="frame" x="121" y="11" width="225" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -364,7 +364,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2649" y="338"/>
+            <point key="canvasLocation" x="2649" y="337"/>
         </scene>
         <!--Item-->
         <scene sceneID="4mQ-N6-Tay">
