@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B0D00E1AB4C0EA00AC9CFE /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B0D00D1AB4C0EA00AC9CFE /* MapaViewController.m */; };
+		01B0D0101AB4C15300AC9CFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B0D00F1AB4C15300AC9CFE /* MapKit.framework */; };
+		01B0D0121AB4C15D00AC9CFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B0D0111AB4C15D00AC9CFE /* CoreLocation.framework */; };
+		01B0D0151AB4C1F600AC9CFE /* MiPunto.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B0D0141AB4C1F600AC9CFE /* MiPunto.m */; };
 		7B7DF0401AB4BC0C00AB8500 /* casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DF03F1AB4BC0C00AB8500 /* casa.jpg */; };
 		7B8586311AB4B25A006765AB /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8586301AB4B25A006765AB /* FacebookViewController.m */; };
 		7B8586341AB4B4E3006765AB /* AnuncioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8586331AB4B4E3006765AB /* AnuncioViewController.m */; };
@@ -31,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B0D00C1AB4C0EA00AC9CFE /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		01B0D00D1AB4C0EA00AC9CFE /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		01B0D00F1AB4C15300AC9CFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		01B0D0111AB4C15D00AC9CFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01B0D0131AB4C1F600AC9CFE /* MiPunto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiPunto.h; sourceTree = "<group>"; };
+		01B0D0141AB4C1F600AC9CFE /* MiPunto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiPunto.m; sourceTree = "<group>"; };
 		7B7DF03F1AB4BC0C00AB8500 /* casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casa.jpg; sourceTree = "<group>"; };
 		7B85862F1AB4B25A006765AB /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
 		7B8586301AB4B25A006765AB /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B0D0121AB4C15D00AC9CFE /* CoreLocation.framework in Frameworks */,
+				01B0D0101AB4C15300AC9CFE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +118,8 @@
 		7BE0109B1AB4877300C074B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01B0D0111AB4C15D00AC9CFE /* CoreLocation.framework */,
+				01B0D00F1AB4C15300AC9CFE /* MapKit.framework */,
 				7BE0109C1AB4877300C074B6 /* Info.plist */,
 				7BE0109D1AB4877300C074B6 /* main.m */,
 			);
@@ -141,12 +155,16 @@
 		7BE010C21AB4879100C074B6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01B0D0131AB4C1F600AC9CFE /* MiPunto.h */,
+				01B0D0141AB4C1F600AC9CFE /* MiPunto.m */,
 				7BE010A21AB4877300C074B6 /* ViewController.h */,
 				7BE010A31AB4877300C074B6 /* ViewController.m */,
 				7B85862F1AB4B25A006765AB /* FacebookViewController.h */,
 				7B8586301AB4B25A006765AB /* FacebookViewController.m */,
 				7B8586321AB4B4E3006765AB /* AnuncioViewController.h */,
 				7B8586331AB4B4E3006765AB /* AnuncioViewController.m */,
+				01B0D00C1AB4C0EA00AC9CFE /* MapaViewController.h */,
+				01B0D00D1AB4C0EA00AC9CFE /* MapaViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,6 +284,8 @@
 				7BE010A11AB4877300C074B6 /* AppDelegate.m in Sources */,
 				7BE0109E1AB4877300C074B6 /* main.m in Sources */,
 				7B8586341AB4B4E3006765AB /* AnuncioViewController.m in Sources */,
+				01B0D00E1AB4C0EA00AC9CFE /* MapaViewController.m in Sources */,
+				01B0D0151AB4C1F600AC9CFE /* MiPunto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

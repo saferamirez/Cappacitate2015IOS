@@ -475,16 +475,22 @@
                             <constraint firstItem="8vs-8x-OhB" firstAttribute="leading" secondItem="Ovd-IQ-d9s" secondAttribute="leadingMargin" constant="43" id="tDA-zK-W4M"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detalle Inmueble" id="71G-c3-4q3"/>
+                    <navigationItem key="navigationItem" title="Detalle Inmueble" id="71G-c3-4q3">
+                        <barButtonItem key="rightBarButtonItem" title="Mapa" id="Hea-fi-JeP">
+                            <connections>
+                                <segue destination="ObW-eM-TCw" kind="presentation" id="fGe-eP-frt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EbN-rp-H3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4019" y="398"/>
         </scene>
-        <!--View Controller-->
+        <!--Mapa-->
         <scene sceneID="rsh-pn-41G">
             <objects>
-                <viewController id="YEM-Jt-9cV" sceneMemberID="viewController">
+                <viewController id="YEM-Jt-9cV" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hRf-Sr-Z1Z"/>
                         <viewControllerLayoutGuide type="bottom" id="wTY-Ti-JfZ"/>
@@ -492,13 +498,33 @@
                     <view key="view" contentMode="scaleToFill" id="S2n-Ae-Hfe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rrd-hC-oLq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rrd-hC-oLq" firstAttribute="leading" secondItem="S2n-Ae-Hfe" secondAttribute="leadingMargin" constant="-16" id="1n8-I6-vIm"/>
+                            <constraint firstItem="wTY-Ti-JfZ" firstAttribute="top" secondItem="rrd-hC-oLq" secondAttribute="bottom" id="6sM-ub-gQv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rrd-hC-oLq" secondAttribute="trailing" constant="-16" id="a6P-ps-rB9"/>
+                            <constraint firstItem="rrd-hC-oLq" firstAttribute="top" secondItem="S2n-Ae-Hfe" secondAttribute="topMargin" id="vzb-rp-MUN"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1Ae-Um-k59"/>
+                    <navigationItem key="navigationItem" title="Mapa" id="1Ae-Um-k59">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="tDB-OR-O7D">
+                            <connections>
+                                <action selector="close:" destination="YEM-Jt-9cV" id="2Oi-np-REC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="rrd-hC-oLq" id="bRf-hF-zzx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrt-yk-QOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4955" y="343"/>
+            <point key="canvasLocation" x="5663" y="403"/>
         </scene>
         <!--Registre su inmueble-->
         <scene sceneID="4mQ-N6-Tay">
@@ -709,6 +735,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bph-AL-qjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842" y="1071"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="an2-T1-rch">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ObW-eM-TCw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j4S-k1-dCO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YEM-Jt-9cV" kind="relationship" relationship="rootViewController" id="jyR-2w-2Fa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="364-BH-Rv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4851" y="403"/>
         </scene>
     </scenes>
     <resources>
