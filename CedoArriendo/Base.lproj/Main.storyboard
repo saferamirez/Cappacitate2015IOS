@@ -101,6 +101,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="468" id="6zx-eE-Szh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="Jha-jD-yfS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="473" id="cdZ-aY-5BT"/>
                                     <constraint firstAttribute="height" constant="473" id="wlm-6R-RHO"/>
                                 </constraints>
                             </webView>
