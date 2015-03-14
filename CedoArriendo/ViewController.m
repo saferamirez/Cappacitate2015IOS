@@ -19,6 +19,7 @@
  
     
     [self.tabBarItem setTitle:@"Buscar"];
+    [self.tabBarItem setImage:[UIImage imageNamed:@"ic_search"]];
    
 }
 
