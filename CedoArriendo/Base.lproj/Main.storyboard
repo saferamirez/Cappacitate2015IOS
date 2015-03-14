@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="1060" y="317"/>
         </scene>
-        <!--Buscar Inmuebles-->
+        <!--Buscar Inmueble-->
         <scene sceneID="tJp-BA-RYg">
             <objects>
-                <tableViewController id="hVn-if-nKR" sceneMemberID="viewController">
+                <tableViewController title="Buscar Inmueble" id="hVn-if-nKR" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VAr-eL-Q8r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -502,10 +502,10 @@
             </objects>
             <point key="canvasLocation" x="4955" y="343"/>
         </scene>
-        <!--Registre su inmueble-->
+        <!--Crear Anuncio-->
         <scene sceneID="4mQ-N6-Tay">
             <objects>
-                <viewController id="APs-yr-735" customClass="AnuncioViewController" sceneMemberID="viewController">
+                <viewController title="Crear Anuncio" id="APs-yr-735" customClass="AnuncioViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fPO-T5-WMl"/>
                         <viewControllerLayoutGuide type="bottom" id="pHL-I7-SbR"/>
@@ -598,7 +598,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7270530189920934" green="0.84447477140809446" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.9689643071661217" green="0.97346822176100034" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="IGp-HG-Rxl" secondAttribute="centerX" id="1Be-4c-hnD"/>
                             <constraint firstItem="Jdk-uh-7SS" firstAttribute="top" secondItem="yQ6-gd-gQV" secondAttribute="bottom" constant="6" id="1t6-FV-JMk"/>
