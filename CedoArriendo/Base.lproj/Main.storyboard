@@ -664,11 +664,11 @@
             </objects>
             <point key="canvasLocation" x="2654" y="1071"/>
         </scene>
-        <!--Item-->
+        <!--Buscar-->
         <scene sceneID="gEE-qI-Qf9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dc5-1f-L7E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1DM-kQ-bEV"/>
+                    <tabBarItem key="tabBarItem" title="Buscar" selectedImage="ic_search" id="1DM-kQ-bEV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Cf-bM-mdb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -719,11 +719,11 @@
             </objects>
             <point key="canvasLocation" x="3207" y="398"/>
         </scene>
-        <!--Item-->
+        <!--Registrar-->
         <scene sceneID="Vg9-CX-Cuc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rXF-fu-7a5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yDz-mD-Eiz"/>
+                    <tabBarItem key="tabBarItem" title="Registrar" id="yDz-mD-Eiz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJ4-PN-TZJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -760,6 +760,7 @@
     <resources>
         <image name="Dubai" width="336" height="350"/>
         <image name="casa.jpg" width="225" height="225"/>
+        <image name="ic_search" width="96" height="96"/>
         <image name="image.jpg" width="720" height="450"/>
         <image name="pentominium_dubai_05" width="900" height="639"/>
     </resources>

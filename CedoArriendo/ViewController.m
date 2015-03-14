@@ -12,15 +12,17 @@
 
 @end
 
+
+
 @implementation ViewController
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
  
     
-    [self.tabBarItem setTitle:@"Buscar"];
-    [self.tabBarItem setImage:[UIImage imageNamed:@"ic_search"]];
-   
 }
 
 - (void)didReceiveMemoryWarning {
