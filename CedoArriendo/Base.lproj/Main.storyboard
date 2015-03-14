@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -399,7 +400,7 @@
             </objects>
             <point key="canvasLocation" x="2478" y="398"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle Inmueble-->
         <scene sceneID="bnc-c0-1Xt">
             <objects>
                 <viewController id="Axo-rr-Xf5" sceneMemberID="viewController">
@@ -410,9 +411,47 @@
                     <view key="view" contentMode="scaleToFill" id="Ovd-IQ-d9s">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dubai" translatesAutoresizingMaskIntoConstraints="NO" id="wVl-8b-OLa">
+                                <rect key="frame" x="194" y="93" width="213" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="CiI-9p-HEB"/>
+                                    <constraint firstAttribute="width" constant="213" id="d4N-WB-8k5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pentominium_dubai_05" translatesAutoresizingMaskIntoConstraints="NO" id="D20-Oq-kGi">
+                                <rect key="frame" x="194" y="253" width="213" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="p0m-Ny-HXT"/>
+                                    <constraint firstAttribute="width" constant="213" id="z9y-ff-U1K"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vs-8x-OhB">
+                                <rect key="frame" x="59" y="403" width="483" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="483" id="9Ji-ul-oh6"/>
+                                    <constraint firstAttribute="width" constant="483" id="iuS-YA-rZl"/>
+                                    <constraint firstAttribute="height" constant="129" id="kGX-wC-7Fb"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D20-Oq-kGi" firstAttribute="centerX" secondItem="8vs-8x-OhB" secondAttribute="centerX" id="6YA-di-XvC"/>
+                            <constraint firstItem="wVl-8b-OLa" firstAttribute="centerX" secondItem="D20-Oq-kGi" secondAttribute="centerX" id="8Z1-h9-pXY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8vs-8x-OhB" secondAttribute="trailing" constant="42" id="NGu-gz-jCO"/>
+                            <constraint firstItem="8vs-8x-OhB" firstAttribute="top" secondItem="D20-Oq-kGi" secondAttribute="bottom" constant="14" id="S7G-Xa-fJO"/>
+                            <constraint firstItem="D20-Oq-kGi" firstAttribute="top" secondItem="wVl-8b-OLa" secondAttribute="bottom" constant="24" id="bGR-gp-hBQ"/>
+                            <constraint firstAttribute="centerX" secondItem="wVl-8b-OLa" secondAttribute="centerX" constant="-0.5" id="gRm-6N-wCJ"/>
+                            <constraint firstItem="wVl-8b-OLa" firstAttribute="top" secondItem="f1Y-kY-hVe" secondAttribute="bottom" constant="29" id="jc6-Cs-h2E"/>
+                            <constraint firstItem="8vs-8x-OhB" firstAttribute="leading" secondItem="Ovd-IQ-d9s" secondAttribute="leadingMargin" constant="43" id="tDA-zK-W4M"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="71G-c3-4q3"/>
+                    <navigationItem key="navigationItem" title="Detalle Inmueble" id="71G-c3-4q3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EbN-rp-H3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,5 +554,6 @@
     <resources>
         <image name="Dubai" width="336" height="350"/>
         <image name="image.jpg" width="720" height="450"/>
+        <image name="pentominium_dubai_05" width="900" height="639"/>
     </resources>
 </document>
