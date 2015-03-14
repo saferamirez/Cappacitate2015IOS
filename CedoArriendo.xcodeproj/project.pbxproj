@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7DF0401AB4BC0C00AB8500 /* casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7DF03F1AB4BC0C00AB8500 /* casa.jpg */; };
 		7B8586311AB4B25A006765AB /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8586301AB4B25A006765AB /* FacebookViewController.m */; };
+		7B8586341AB4B4E3006765AB /* AnuncioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8586331AB4B4E3006765AB /* AnuncioViewController.m */; };
 		7BE0109E1AB4877300C074B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0109D1AB4877300C074B6 /* main.m */; };
 		7BE010A11AB4877300C074B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE010A01AB4877300C074B6 /* AppDelegate.m */; };
 		7BE010A41AB4877300C074B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE010A31AB4877300C074B6 /* ViewController.m */; };
@@ -29,8 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B7DF03F1AB4BC0C00AB8500 /* casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = casa.jpg; sourceTree = "<group>"; };
 		7B85862F1AB4B25A006765AB /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
 		7B8586301AB4B25A006765AB /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		7B8586321AB4B4E3006765AB /* AnuncioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnuncioViewController.h; sourceTree = "<group>"; };
+		7B8586331AB4B4E3006765AB /* AnuncioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnuncioViewController.m; sourceTree = "<group>"; };
 		7BE010981AB4877300C074B6 /* CedoArriendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CedoArriendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE0109C1AB4877300C074B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE0109D1AB4877300C074B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		7BE0108F1AB4877300C074B6 = {
 			isa = PBXGroup;
 			children = (
+				7B7DF03F1AB4BC0C00AB8500 /* casa.jpg */,
 				7BE010C61AB4883C00C074B6 /* image.jpg */,
 				7BE0109A1AB4877300C074B6 /* CedoArriendo */,
 				7BE010B41AB4877300C074B6 /* CedoArriendoTests */,
@@ -139,6 +145,8 @@
 				7BE010A31AB4877300C074B6 /* ViewController.m */,
 				7B85862F1AB4B25A006765AB /* FacebookViewController.h */,
 				7B8586301AB4B25A006765AB /* FacebookViewController.m */,
+				7B8586321AB4B4E3006765AB /* AnuncioViewController.h */,
+				7B8586331AB4B4E3006765AB /* AnuncioViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7DF0401AB4BC0C00AB8500 /* casa.jpg in Resources */,
 				7BE010A71AB4877300C074B6 /* Main.storyboard in Resources */,
 				7BE010C71AB4883C00C074B6 /* image.jpg in Resources */,
 				7BE010AC1AB4877300C074B6 /* LaunchScreen.xib in Resources */,
@@ -256,6 +265,7 @@
 				7BE010A41AB4877300C074B6 /* ViewController.m in Sources */,
 				7BE010A11AB4877300C074B6 /* AppDelegate.m in Sources */,
 				7BE0109E1AB4877300C074B6 /* main.m in Sources */,
+				7B8586341AB4B4E3006765AB /* AnuncioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
