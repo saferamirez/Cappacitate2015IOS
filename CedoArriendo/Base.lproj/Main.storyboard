@@ -82,11 +82,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="292" y="277"/>
         </scene>
-        <!--View Controller-->
+        <!--Conectando a facebook-->
         <scene sceneID="HLJ-gs-pE2">
             <objects>
-                <viewController id="RbC-YC-Keg" sceneMemberID="viewController">
+                <viewController id="RbC-YC-Keg" customClass="FacebookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="10w-u6-mhT"/>
                         <viewControllerLayoutGuide type="bottom" id="41T-gG-KIA"/>
@@ -94,9 +95,28 @@
                     <view key="view" contentMode="scaleToFill" id="uRs-K5-DlT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bg2-eN-xKo">
+                                <rect key="frame" x="66" y="84" width="468" height="473"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bg2-eN-xKo" firstAttribute="top" secondItem="10w-u6-mhT" secondAttribute="bottom" constant="20" id="o0R-52-c3t"/>
+                            <constraint firstAttribute="centerX" secondItem="bg2-eN-xKo" secondAttribute="centerX" id="rGs-GE-rBc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GmF-CA-QUT"/>
+                    <navigationItem key="navigationItem" title="Conectando a facebook" id="BXT-IF-dyr">
+                        <barButtonItem key="rightBarButtonItem" title="Volver" id="Thc-Ps-DCL">
+                            <connections>
+                                <action selector="btnVolver:" destination="RbC-YC-Keg" id="Zwb-6X-NI3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navegador" destination="bg2-eN-xKo" id="616-0G-Ufx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n52-rv-NaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

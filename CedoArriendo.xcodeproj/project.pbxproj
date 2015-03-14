@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8586311AB4B25A006765AB /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8586301AB4B25A006765AB /* FacebookViewController.m */; };
 		7BE0109E1AB4877300C074B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0109D1AB4877300C074B6 /* main.m */; };
 		7BE010A11AB4877300C074B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE010A01AB4877300C074B6 /* AppDelegate.m */; };
 		7BE010A41AB4877300C074B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE010A31AB4877300C074B6 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B85862F1AB4B25A006765AB /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		7B8586301AB4B25A006765AB /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
 		7BE010981AB4877300C074B6 /* CedoArriendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CedoArriendo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE0109C1AB4877300C074B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE0109D1AB4877300C074B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 			children = (
 				7BE010A21AB4877300C074B6 /* ViewController.h */,
 				7BE010A31AB4877300C074B6 /* ViewController.m */,
+				7B85862F1AB4B25A006765AB /* FacebookViewController.h */,
+				7B8586301AB4B25A006765AB /* FacebookViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8586311AB4B25A006765AB /* FacebookViewController.m in Sources */,
 				7BE010A41AB4877300C074B6 /* ViewController.m in Sources */,
 				7BE010A11AB4877300C074B6 /* AppDelegate.m in Sources */,
 				7BE0109E1AB4877300C074B6 /* main.m in Sources */,
