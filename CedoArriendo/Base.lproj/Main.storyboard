@@ -53,11 +53,14 @@
                                     <segue destination="eMj-8Z-Q5J" kind="show" id="8h4-eV-zkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jif-J8-k62">
-                                <rect key="frame" x="277" y="461" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jif-J8-k62">
+                                <rect key="frame" x="210" y="469" width="180" height="30"/>
+                                <state key="normal" title="Registrarse con Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LJB-KH-lpG" kind="show" id="6RY-Ib-fzp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -69,7 +72,9 @@
                             <constraint firstItem="vbi-Ao-INY" firstAttribute="top" secondItem="Pic-9S-Hde" secondAttribute="bottom" constant="16" id="LeF-Mi-BwH"/>
                             <constraint firstItem="Pic-9S-Hde" firstAttribute="centerX" secondItem="vbi-Ao-INY" secondAttribute="centerX" constant="0.5" id="ODD-TD-rJ9"/>
                             <constraint firstAttribute="centerX" secondItem="QGx-g3-Yrt" secondAttribute="centerX" id="UTB-Pt-gxJ"/>
+                            <constraint firstItem="LGf-9w-y71" firstAttribute="centerX" secondItem="jif-J8-k62" secondAttribute="centerX" id="Z6E-xu-KUO"/>
                             <constraint firstItem="Pic-9S-Hde" firstAttribute="top" secondItem="QGx-g3-Yrt" secondAttribute="bottom" constant="25" id="dCc-zf-k9u"/>
+                            <constraint firstItem="jif-J8-k62" firstAttribute="top" secondItem="LGf-9w-y71" secondAttribute="bottom" constant="16" id="hI3-XS-EIH"/>
                             <constraint firstItem="LGf-9w-y71" firstAttribute="centerX" secondItem="Cnl-pj-OLW" secondAttribute="centerX" id="tcv-0G-jK6"/>
                             <constraint firstItem="Cnl-pj-OLW" firstAttribute="top" secondItem="vbi-Ao-INY" secondAttribute="bottom" constant="33" id="uXJ-xh-ZQl"/>
                         </constraints>
@@ -77,6 +82,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HLJ-gs-pE2">
+            <objects>
+                <viewController id="RbC-YC-Keg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="10w-u6-mhT"/>
+                        <viewControllerLayoutGuide type="bottom" id="41T-gG-KIA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uRs-K5-DlT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GmF-CA-QUT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n52-rv-NaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="1071"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tm9-HP-7Ax">
@@ -411,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIT-9E-IxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="1205"/>
+            <point key="canvasLocation" x="2397" y="1205"/>
         </scene>
         <!--Item-->
         <scene sceneID="gEE-qI-Qf9">
