@@ -25,7 +25,7 @@
 }
 
 - (IBAction)btnGuardar:(id)sender {
-    UIAlertView * save = [[UIAlertView alloc] initWithTitle:@"Guardando Informacion" message:@"Su inmueble ha sido guardado" delegate:nil  cancelButtonTitle:@"Cancelar" otherButtonTitles:nil, nil];
+    UIAlertView * save = [[UIAlertView alloc] initWithTitle:@"Guardando Informacion" message:@"Su inmueble ha sido guardado" delegate:nil  cancelButtonTitle:@"Aceptar" otherButtonTitles:nil, nil];
     
     [save show];
     
